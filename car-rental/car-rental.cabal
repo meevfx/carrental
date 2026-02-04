@@ -1,0 +1,27 @@
+cabal-version: 2.4
+
+name:           car-rental
+version:        0.1.0.0
+synopsis:       A car rental backend built with Haskell and Scotty
+description:    A simple car rental application with rent and return functionality.
+homepage:       https://example.com
+license:        BSD-3-Clause
+author:         Your Name
+maintainer:     your.email@example.com
+category:       Web
+build-type:     Simple
+
+executable car-rental
+  main-is:          Main.hs
+  build-depends:    base >= 4.7 && < 5
+                  , scotty
+                  , aeson
+                  , wai-middleware-static
+                  , time
+                  , text
+                  , wai
+                  , wai-cors
+                  , http-types
+                  , bytestring
+  hs-source-dirs:   src
+  default-language: Haskell2010
